@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a1beac91e74453daa3c250013b022cd6",
+    "revision": "b7a0b223ee2e2453f623dd9db683313c",
     "url": "/musescore_rofl/index.html"
   },
   {
-    "revision": "78d1d069000a5ed7d256",
+    "revision": "74b720e6c71243980d6a",
     "url": "/musescore_rofl/static/css/2.35fcc229.chunk.css"
   },
   {
-    "revision": "e32d0ca2555caa3861df",
+    "revision": "3b319e00647e075f6f55",
     "url": "/musescore_rofl/static/css/main.b7de0216.chunk.css"
   },
   {
-    "revision": "78d1d069000a5ed7d256",
-    "url": "/musescore_rofl/static/js/2.ef1b5c82.chunk.js"
+    "revision": "74b720e6c71243980d6a",
+    "url": "/musescore_rofl/static/js/2.ae4608b2.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/musescore_rofl/static/js/2.ef1b5c82.chunk.js.LICENSE.txt"
+    "url": "/musescore_rofl/static/js/2.ae4608b2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e32d0ca2555caa3861df",
-    "url": "/musescore_rofl/static/js/main.cc499232.chunk.js"
+    "revision": "3b319e00647e075f6f55",
+    "url": "/musescore_rofl/static/js/main.0b8ea4df.chunk.js"
   },
   {
     "revision": "0071c6a083658d7b7225",
