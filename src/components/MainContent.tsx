@@ -5,9 +5,17 @@ import {
   AppstoreOutlined,
   YoutubeOutlined,
 } from "@ant-design/icons";
-import { Button, Tabs } from "antd";
+import { Button, Tabs, Badge } from "antd";
 import MainGrid from "./MainGrid";
 const { TabPane } = Tabs;
+
+const ReviewTab = () => {
+  return (
+    <Badge count={11} style={{ backgroundColor: "#EE2E6B" }}>
+      To review
+    </Badge>
+  );
+};
 
 const MainContent = () => {
   return (
@@ -26,7 +34,7 @@ const MainContent = () => {
         </FakeTitleWrapper>
         <Tabs defaultActiveKey="1">
           <TabPane tab="All" key="1" />
-          <TabPane tab="To review" key="2" />
+          <TabPane tab={<ReviewTab />} key="2" />
           <TabPane tab="Graded" key="3" />
         </Tabs>
       </ContentHeader>
