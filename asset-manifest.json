@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/musescore_rofl/static/css/main.b7de0216.chunk.css",
-    "main.js": "/musescore_rofl/static/js/main.0b8ea4df.chunk.js",
-    "main.js.map": "/musescore_rofl/static/js/main.0b8ea4df.chunk.js.map",
+    "main.css": "/musescore_rofl/static/css/main.71627b01.chunk.css",
+    "main.js": "/musescore_rofl/static/js/main.dda8da81.chunk.js",
+    "main.js.map": "/musescore_rofl/static/js/main.dda8da81.chunk.js.map",
     "runtime-main.js": "/musescore_rofl/static/js/runtime-main.c3f3fa3a.js",
     "runtime-main.js.map": "/musescore_rofl/static/js/runtime-main.c3f3fa3a.js.map",
     "static/css/2.35fcc229.chunk.css": "/musescore_rofl/static/css/2.35fcc229.chunk.css",
-    "static/js/2.ae4608b2.chunk.js": "/musescore_rofl/static/js/2.ae4608b2.chunk.js",
-    "static/js/2.ae4608b2.chunk.js.map": "/musescore_rofl/static/js/2.ae4608b2.chunk.js.map",
+    "static/js/2.55ef12a1.chunk.js": "/musescore_rofl/static/js/2.55ef12a1.chunk.js",
+    "static/js/2.55ef12a1.chunk.js.map": "/musescore_rofl/static/js/2.55ef12a1.chunk.js.map",
     "index.html": "/musescore_rofl/index.html",
-    "precache-manifest.43a6f1ff9380713f995f28d1a6d91b80.js": "/musescore_rofl/precache-manifest.43a6f1ff9380713f995f28d1a6d91b80.js",
+    "precache-manifest.26bc8d2bced56e2dec89a1b883f20a68.js": "/musescore_rofl/precache-manifest.26bc8d2bced56e2dec89a1b883f20a68.js",
     "service-worker.js": "/musescore_rofl/service-worker.js",
     "static/css/2.35fcc229.chunk.css.map": "/musescore_rofl/static/css/2.35fcc229.chunk.css.map",
-    "static/css/main.b7de0216.chunk.css.map": "/musescore_rofl/static/css/main.b7de0216.chunk.css.map",
-    "static/js/2.ae4608b2.chunk.js.LICENSE.txt": "/musescore_rofl/static/js/2.ae4608b2.chunk.js.LICENSE.txt",
+    "static/css/main.71627b01.chunk.css.map": "/musescore_rofl/static/css/main.71627b01.chunk.css.map",
+    "static/js/2.55ef12a1.chunk.js.LICENSE.txt": "/musescore_rofl/static/js/2.55ef12a1.chunk.js.LICENSE.txt",
+    "static/media/Logo.a52adc26.svg": "/musescore_rofl/static/media/Logo.a52adc26.svg",
     "static/media/fakeSheet.7f6184f6.svg": "/musescore_rofl/static/media/fakeSheet.7f6184f6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c3f3fa3a.js",
     "static/css/2.35fcc229.chunk.css",
-    "static/js/2.ae4608b2.chunk.js",
-    "static/css/main.b7de0216.chunk.css",
-    "static/js/main.0b8ea4df.chunk.js"
+    "static/js/2.55ef12a1.chunk.js",
+    "static/css/main.71627b01.chunk.css",
+    "static/js/main.dda8da81.chunk.js"
   ]
 }

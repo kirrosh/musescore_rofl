@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/musescore_rofl/precache-manifest.43a6f1ff9380713f995f28d1a6d91b80.js"
+  "/musescore_rofl/precache-manifest.26bc8d2bced56e2dec89a1b883f20a68.js"
 );
 
 self.addEventListener('message', (event) => {
