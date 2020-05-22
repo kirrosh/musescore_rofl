@@ -4,17 +4,20 @@ import styled from "styled-components/macro";
 import { SearchOutlined, UserOutlined } from "@ant-design/icons";
 import MainContent from "./MainContent";
 
+import { ReactComponent as LogoIcon } from "../svg/Logo.svg";
+import LinkButton from "../common/LinkButton";
 const { Header, Content } = Layout;
+
 const MainPage = () => {
   return (
     <Layout className="layout">
       <StyledHeader>
-        <Logo />
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["2"]}>
-          <Menu.Item key="1">Classes</Menu.Item>
-          <Menu.Item key="2">Assignments</Menu.Item>
-          <Menu.Item key="3">Library</Menu.Item>
-        </Menu>
+        <LogoIcon width={137} height={50} />
+        <NavigationMenu>
+          <LinkButton>Classes</LinkButton>
+          <LinkButton active>Assignments</LinkButton>
+          <LinkButton>Library</LinkButton>
+        </NavigationMenu>
         <AccountAndSearch>
           <SearchIcon />
           <Avatar size={40} icon={<UserOutlined />} />
@@ -36,16 +39,8 @@ const MainPage = () => {
   );
 };
 
-const Logo = styled.div`
-  background: url(https://musescore.com/static/public/build/musescore/202005/logoWhite.16662720.png)
-    no-repeat 50%;
-  padding: 5px;
-  width: 150px;
-  background-size: contain;
-  width: 100px;
-`;
-
 const StyledHeader = styled(Header)`
+  align-items: center;
   display: flex;
   position: fixed;
   z-index: 1;
@@ -66,4 +61,12 @@ const AccountAndSearch = styled.div`
   display: flex;
   align-items: center;
 `;
+
+const NavigationMenu = styled.div`
+  display: grid;
+  grid-gap: 55px;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+`;
+
 export default MainPage;

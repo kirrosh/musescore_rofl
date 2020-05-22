@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components/macro";
 import { UserOutlined, DashOutlined, AudioOutlined } from "@ant-design/icons";
 import { Avatar, Select, Input, Button } from "antd";
-import { ReactComponent as Sheet } from "./fakeSheet.svg";
+import { ReactComponent as Sheet } from "../svg/fakeSheet.svg";
 import fakeData, { Musician } from "./fakeData";
 
 const { Option } = Select;

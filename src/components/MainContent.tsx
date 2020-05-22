@@ -7,6 +7,7 @@ import {
 } from "@ant-design/icons";
 import { Button, Tabs, Badge } from "antd";
 import MainGrid from "./MainGrid";
+import IsMobileContext from "../tools/IsMobileContext";
 const { TabPane } = Tabs;
 
 const ReviewTab = () => {
@@ -18,9 +19,10 @@ const ReviewTab = () => {
 };
 
 const MainContent = () => {
+  const isMobile = React.useContext(IsMobileContext);
   return (
     <StyledMainContent>
-      <ContentHeader>
+      <ContentHeader isMobile={isMobile}>
         <HeaderIcons>
           <Button icon={<MenuOutlined />} />
           <Button icon={<AppstoreOutlined />} />
@@ -32,21 +34,16 @@ const MainContent = () => {
           </FakeTitle>
           <FakeSubtitle>Due 27 Apr</FakeSubtitle>
         </FakeTitleWrapper>
-        <Tabs defaultActiveKey="1">
+        <StyledTabs defaultActiveKey="1">
           <TabPane tab="All" key="1" />
           <TabPane tab={<ReviewTab />} key="2" />
           <TabPane tab="Graded" key="3" />
-        </Tabs>
+        </StyledTabs>
       </ContentHeader>
       <MainGrid />
     </StyledMainContent>
   );
 };
-
-const ContentHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
 
 const HeaderIcons = styled.div`
   display: flex;
@@ -60,9 +57,6 @@ const FakeTitleWrapper = styled.div`
   margin-top: -10px;
 `;
 const FakeTitle = styled.div`
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 8px;
   align-content: center;
   font-style: normal;
   font-weight: 600;
@@ -70,8 +64,9 @@ const FakeTitle = styled.div`
   line-height: 29px;
   color: #1b1f3c;
   & span {
-    align-items: center;
-    display: flex;
+    margin-right: 8px;
+    /* align-items: center;
+    display: flex; */
   }
 `;
 const FakeSubtitle = styled.div`
@@ -83,5 +78,28 @@ const FakeSubtitle = styled.div`
 `;
 
 const StyledMainContent = styled.div``;
+const StyledTabs = styled(Tabs)``;
+
+const ContentHeader = styled.div<{ isMobile?: boolean }>`
+  display: grid;
+  align-items: center;
+  grid-template-areas: ${(props) =>
+    props.isMobile
+      ? `
+    "a a"
+    "b c"`
+      : `"b a c"`};
+
+  ${HeaderIcons} {
+    grid-area: b;
+  }
+  ${FakeTitleWrapper} {
+    grid-area: a;
+  }
+  ${StyledTabs} {
+    grid-area: c;
+    justify-self: end;
+  }
+`;
 
 export default MainContent;
