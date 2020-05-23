@@ -74,6 +74,7 @@ const StyledContentHeader = styled.div<{ isMobile?: boolean }>`
   display: grid;
   align-items: center;
   margin-bottom: 55px;
+  grid-template-columns: 1fr auto 1fr;
   grid-template-areas: ${(props) =>
     props.isMobile
       ? `
