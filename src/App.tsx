@@ -1,5 +1,4 @@
 import React from "react";
-// import logo from "./logo.svg";
 import "./App.css";
 import MainPage from "./components/MainPage";
 import IsMobileContext from "./tools/IsMobileContext";
@@ -9,7 +8,6 @@ function App() {
   React.useEffect(() => {
     const recalculate = () => {
       setIsMobile(!window.matchMedia("(min-width: 815px)").matches);
-      console.log(window.matchMedia("(min-width: 815px)").matches);
     };
     recalculate();
     window.addEventListener("resize", recalculate);
